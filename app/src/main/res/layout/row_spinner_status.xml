@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <vn.app.tintoc.control.MyTextView
+        android:id="@+id/txt_status_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:font_family="segoe_regular"
+        android:layout_gravity="center"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="4dp"
+        android:background="@android:color/transparent"
+        android:hint="Status"
+        android:singleLine="true"
+        android:textColor="@color/txt_title"
+        android:textColorHint="@color/colorTextWhite"
+        android:textSize="14sp" />
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    signingConfigs {
+        debug {
+            keyAlias 'tintoc'
+            keyPassword 'tintoc123456'
+            storeFile file('tintoc.keystore')
+            storePassword 'tintoc123456'
+        }
+
+        release {
+            keyAlias 'tintoc'
+            keyPassword 'tintoc123456'
+            storeFile file('tintoc.keystore')
+            storePassword 'tintoc123456'
+        }
+    }
+
+    compileSdkVersion 26
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        applicationId "vn.app.tintoc"
+        minSdkVersion 17
+        targetSdkVersion 26
+        versionCode 9
+        versionName "1.0.8"
+        multiDexEnabled true
+        useLibrary 'org.apache.http.legacy'
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/LICENSE'
+    }
+    repositories {
+        maven {
+            url "https://maven.google.com"
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile('org.apache.httpcomponents:httpmime:4.3.6') {
+        exclude module: 'httpclient'
+    }
+    compile 'org.apache.httpcomponents:httpclient-android:4.3.5'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.google.firebase:firebase-core:11.8.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:multidex:1.0.0'
+    compile 'com.google.code.gson:gson:2.7'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.facebook.android:facebook-android-sdk:[4,5)'
+    compile 'com.google.firebase:firebase-auth:11.8.0'
+    compile 'com.google.firebase:firebase-messaging:11.8.0'
+    compile 'com.facebook.android:facebook-login:[4,5)'
+    compile 'com.google.android.gms:play-services-auth:11.8.0'
+    compile 'joda-time:joda-time:2.9.7'
+    compile 'com.wdullaer:materialdatetimepicker:3.3.0'
+    testCompile 'junit:junit:4.12'
+}
+apply plugin: 'com.google.gms.google-services'

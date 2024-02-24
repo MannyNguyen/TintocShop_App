@@ -1,0 +1,230 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_login_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".fragment.LoginFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/login_marginleft"
+        android:paddingRight="@dimen/login_marginright">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.6">
+
+            <ImageView
+                android:id="@+id/img_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="30dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/logo_tintoc" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/login_ic_width"
+                        android:layout_height="@dimen/login_ic_heigh"
+                        android:layout_gravity="center"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_mail" />
+
+                    <vn.app.tintoc.control.MyEditText
+                        android:id="@+id/edt_login_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/login_email"
+                        android:inputType="textEmailAddress"
+                        android:paddingLeft="14dp"
+                        android:textColor="@color/new_color_text"
+                        android:textColorHint="@color/password_text"
+                        android:textSize="@dimen/login_textsize"
+                        app:font_family="segoe_italic" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorShopInfoTwo" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/login_ic_width"
+                        android:layout_height="@dimen/login_ic_heigh"
+                        android:src="@drawable/ic_password" />
+
+                    <vn.app.tintoc.control.MyEditText
+                        android:id="@+id/edt_login_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/password"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPassword"
+                        android:paddingLeft="14dp"
+                        android:textColor="@color/new_color_text"
+                        android:textColorHint="@color/password_text"
+                        android:textSize="@dimen/login_textsize"
+                        app:font_family="segoe_italic" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorShopInfoTwo" />
+
+            </LinearLayout>
+
+            <vn.app.tintoc.control.MyTextView
+                android:id="@+id/txt_forgot_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="8dp"
+                android:gravity="right"
+                android:text="@string/forgot_password"
+                android:textColor="@color/new_color_text"
+                android:textSize="12sp"
+                android:visibility="invisible"/>
+
+            <vn.app.tintoc.control.MyButton
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/new_border_box"
+                style="?android:attr/borderlessButtonStyle"
+                android:text="@string/login"
+                android:textColor="@color/colorTextWhite"
+                android:textSize="14sp"
+                app:font_family="segoe_semi_bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:orientation="vertical">
+
+            <vn.app.tintoc.control.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="@string/login_by_another_account"
+                android:textColor="@color/new_color_text"
+                android:textSize="14sp"
+                android:visibility="visible"
+                app:font_family="segoe_light" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img_facebook_login"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_facebook" />
+
+                <ImageView
+                    android:id="@+id/img_google_login"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_google" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorShopInfoTwo"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <vn.app.tintoc.control.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/not_register"
+            android:textColor="@color/colorTextWhite"
+            android:textSize="13sp"
+            app:font_family="segoe_regular" />
+
+        <vn.app.tintoc.control.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="@string/register"
+            android:textAllCaps="true"
+            android:textColor="@color/colorShopInfoOne"
+            android:textSize="@dimen/login_title_textsize"
+            app:font_family="segoe_semi_bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

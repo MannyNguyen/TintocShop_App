@@ -1,0 +1,410 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_register"
+    android:orientation="vertical"
+    tools:context=".fragment.RegisterFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="36dp"
+        android:paddingBottom="16dp">
+
+        <vn.app.tintoc.control.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:text="@string/enter_full_info"
+            android:textColor="@color/colorShopInfoOne"
+            android:textSize="14sp"
+            app:font_family="segoe_regular" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_name" />
+
+                <vn.app.tintoc.control.MyEditText
+                    android:id="@+id/edt_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/shop_name"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:paddingLeft="12dp"
+                    android:textColor="@color/new_color_text"
+                    android:textColorHint="@color/password_text"
+                    android:textSize="@dimen/register_textsize"
+                    app:font_family="segoe_italic"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorShopInfoTwo" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/register_margintop"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_phone" />
+
+                <vn.app.tintoc.control.MyEditText
+                    android:id="@+id/edt_phone_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/phone_number"
+                    android:imeOptions="actionNext"
+                    android:inputType="phone"
+                    android:paddingLeft="12dp"
+                    android:textColor="@color/new_color_text"
+                    android:textColorHint="@color/password_text"
+                    android:textSize="@dimen/register_textsize"
+                    app:font_family="segoe_italic"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorShopInfoTwo" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/register_margintop"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_mail" />
+
+                <vn.app.tintoc.control.MyEditText
+                    android:id="@+id/edt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/login_email"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="12dp"
+                    android:textColor="@color/new_color_text"
+                    android:textColorHint="@color/password_text"
+                    android:textSize="@dimen/register_textsize"
+                    app:font_family="segoe_italic"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorShopInfoTwo" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/register_margintop"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_password" />
+
+                <vn.app.tintoc.control.MyEditText
+                    android:id="@+id/edt_register_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/register_password"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:paddingLeft="12dp"
+                    android:textColor="@color/new_color_text"
+                    android:textColorHint="@color/password_text"
+                    android:textSize="@dimen/register_textsize"
+                    app:font_family="segoe_italic"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorShopInfoTwo" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/register_margintop"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_password" />
+
+                <vn.app.tintoc.control.MyEditText
+                    android:id="@+id/edt_confirm_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/confirm_password"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:paddingLeft="12dp"
+                    android:textColor="@color/new_color_text"
+                    android:textColorHint="@color/password_text"
+                    android:textSize="@dimen/register_textsize"
+                    app:font_family="segoe_italic"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorShopInfoTwo" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/register_margintop"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_place" />
+
+                <vn.app.tintoc.control.MyEditText
+                    android:id="@+id/edt_place"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/address"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:paddingLeft="12dp"
+                    android:singleLine="true"
+                    android:textColor="@color/new_color_text"
+                    android:textColorHint="@color/password_text"
+                    android:textSize="@dimen/register_textsize"
+                    app:font_family="segoe_italic"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorShopInfoTwo" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/register_margintop"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_dis" />
+
+                <Spinner
+                    android:id="@+id/spn_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical">
+
+                </Spinner>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:paddingRight="4dp"
+                android:background="@color/colorShopInfoTwo" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:id="@+id/spn_county"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                </Spinner>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorShopInfoTwo" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:id="@+id/spn_ward"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                </Spinner>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorShopInfoTwo" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <vn.app.tintoc.control.MyButton
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/new_border_box"
+            android:text="@string/register"
+            style="?android:attr/borderlessButtonStyle"
+            android:textColor="@color/colorTextWhite"
+            android:textSize="@dimen/register_signup_textsize"
+            app:font_family="segoe_semi_bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="18dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <vn.app.tintoc.control.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/have_account"
+                android:textColor="@color/new_color_text"
+                android:textSize="16sp"
+                app:font_family="segoe_regular" />
+
+            <vn.app.tintoc.control.MyTextView
+                android:id="@+id/txt_login_now"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="@string/register_now"
+                android:textAllCaps="true"
+                android:textColor="@color/colorShopInfoOne"
+                android:textSize="16sp"
+                app:font_family="segoe_semi_bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

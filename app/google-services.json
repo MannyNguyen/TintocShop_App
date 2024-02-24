@@ -1,0 +1,129 @@
+{
+  "project_info": {
+    "project_number": "86894940652",
+    "firebase_url": "https://tintoc-9d509.firebaseio.com",
+    "project_id": "tintoc-9d509",
+    "storage_bucket": "tintoc-9d509.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:86894940652:android:62039dc74362451e",
+        "android_client_info": {
+          "package_name": "vn.app.tintoc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "86894940652-hgvf0tndrshu8i2h15k6hqsfpnf2hec3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.app.tintoc",
+            "certificate_hash": "20501cda95f4852af1979ef42406f1c9879d8553"
+          }
+        },
+        {
+          "client_id": "86894940652-c8qvpnavcpunm1btqj83sh7hac2dd5n5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.app.tintoc",
+            "certificate_hash": "11688f65ab1defa356f78da2a598f19657a6344b"
+          }
+        },
+        {
+          "client_id": "86894940652-dund1ikl9rub0mljt5qsfjdr2qm1houn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAzTsqPH_H9qhZlEMFo59rKsD9xvIDHYo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "86894940652-dund1ikl9rub0mljt5qsfjdr2qm1houn.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "86894940652-jco2ktr98m5v94p8snm1vulpfglbgav0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "vn.app.tintocshipper"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:86894940652:android:0f394a93552afb8e",
+        "android_client_info": {
+          "package_name": "vn.app.tintocshipper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "86894940652-i609lsqmhd8912brisc6k8rdu03ellt7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.app.tintocshipper",
+            "certificate_hash": "20501cda95f4852af1979ef42406f1c9879d8553"
+          }
+        },
+        {
+          "client_id": "86894940652-h02ktbkr6heaabh4nvqrbrdb80ujif7i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.app.tintocshipper",
+            "certificate_hash": "11688f65ab1defa356f78da2a598f19657a6344b"
+          }
+        },
+        {
+          "client_id": "86894940652-dund1ikl9rub0mljt5qsfjdr2qm1houn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAzTsqPH_H9qhZlEMFo59rKsD9xvIDHYo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "86894940652-dund1ikl9rub0mljt5qsfjdr2qm1houn.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "86894940652-jco2ktr98m5v94p8snm1vulpfglbgav0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "vn.app.tintocshipper"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

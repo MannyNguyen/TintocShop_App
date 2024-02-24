@@ -1,0 +1,80 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/choose_service_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context="vn.app.tintoc.fragment.ChooseServiceFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_back_white"
+            android:layout_width="@dimen/chservice_ic_width"
+            android:layout_height="@dimen/chservice_ic_heigh"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:padding="6dp"
+            android:src="@drawable/ic_thin_back" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ll_new_order"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/don_hang_moi" />
+
+            <vn.app.tintoc.control.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/new_order"
+                android:textAllCaps="true"
+                android:textColor="@color/txt_title"
+                android:textSize="@dimen/chservice_text"
+                app:font_family="segoe_bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ll_follow_order"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/theo_doi_don_hang" />
+
+            <vn.app.tintoc.control.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/following_order"
+                android:textAllCaps="true"
+                android:textColor="@color/txt_title"
+                android:textSize="@dimen/chservice_text"
+                app:font_family="segoe_bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

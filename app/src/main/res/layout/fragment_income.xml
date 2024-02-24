@@ -1,0 +1,388 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorTextWhite"
+    android:orientation="vertical"
+    tools:context=".fragment.IncomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize">
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:padding="18dp"
+                    android:src="@drawable/icon_x" />
+
+                <vn.app.tintoc.control.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:adjustViewBounds="true"
+                    android:padding="12dp"
+                    android:text="@string/debt"
+                    android:textColor="@color/color_black"
+                    android:textSize="18sp"
+                    app:font_family="segoe_semi_bold" />
+
+            </RelativeLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <vn.app.tintoc.control.MyTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/from"
+                android:textColor="@color/new_color_text"
+                app:font_family="segoe_regular" />
+
+            <vn.app.tintoc.control.MyTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:text="@string/to"
+                android:textColor="@color/new_color_text"
+                app:font_family="segoe_regular" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_from_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/gray_edittext_border_square_box"
+                android:orientation="horizontal">
+
+                <vn.app.tintoc.control.MyTextView
+                    android:id="@+id/txt_income_from_date"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="9"
+                    android:gravity="center"
+                    android:text="@string/from_date"
+                    android:textColor="@color/new_color_text"
+                    android:textSize="14sp"
+                    app:font_family="segoe_regular" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_blue_calendar" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_to_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/gray_edittext_border_square_box"
+                android:orientation="horizontal">
+
+                <vn.app.tintoc.control.MyTextView
+                    android:id="@+id/txt_income_to_date"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="9"
+                    android:gravity="center"
+                    android:text="@string/to_date"
+                    android:textColor="@color/new_color_text"
+                    android:textSize="14sp"
+                    app:font_family="segoe_regular" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_blue_calendar" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_num_income_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="8dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:background="@color/colorShopInfoOne"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <vn.app.tintoc.control.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tổng đơn: "
+                android:textSize="14sp"
+                android:textColor="@color/mdtp_white"
+                app:font_family="segoe_regular"/>
+
+            <vn.app.tintoc.control.MyTextView
+                android:id="@+id/txt_number_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/mdtp_white"
+                android:textSize="14sp"
+                app:font_family="segoe_regular" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="12dp">
+
+            <ImageView
+                android:id="@+id/iv_background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:adjustViewBounds="true"
+                android:paddingRight="4dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/tab_left" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/ll_not_payed"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingTop="8dp">
+
+                    <ImageView
+                        android:id="@+id/iv_alert_1"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="right"
+                        android:layout_margin="4dp"
+                        android:src="@drawable/ic_red_dot"
+                        android:visibility="visible" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/ll_compared"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingTop="8dp">
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/ll_payed"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingTop="8dp">
+
+                    <ImageView
+                        android:id="@+id/iv_alert_2"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="top|right"
+                        android:layout_marginRight="8dp"
+                        android:gravity="center"
+                        android:src="@drawable/ic_red_dot"
+                        android:visibility="visible" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/income_shadow"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <vn.app.tintoc.control.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/total_debt"
+                        android:textColor="@color/new_color_text"
+                        android:textSize="14sp"
+                        app:font_family="segoe_semi_bold" />
+
+                    <vn.app.tintoc.control.MyTextView
+                        android:id="@+id/txt_total_debt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/new_color_text"
+                        android:textSize="14sp"
+                        app:font_family="segoe_semi_bold" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <vn.app.tintoc.control.MyTextView
+                        android:id="@+id/txt_debt_address"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:background="@drawable/bold_blue_box"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:paddingTop="8dp"
+                        android:text="@string/order_info"
+                        android:textColor="@color/colorTextWhite"
+                        android:textSize="10sp"
+                        app:font_family="segoe_semi_bold" />
+
+                    <vn.app.tintoc.control.MyTextView
+                        android:id="@+id/txt_total_income"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="4"
+                        android:background="@drawable/bold_blue_box"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="2dp"
+                        android:paddingTop="8dp"
+                        android:text="@string/total"
+                        android:textColor="@color/colorTextWhite"
+                        android:textSize="10sp"
+                        app:font_family="segoe_semi_bold" />
+
+                    <vn.app.tintoc.control.MyTextView
+                        android:id="@+id/txt_type"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/bold_blue_box"
+                        android:gravity="center"
+                        android:inputType="text"
+                        android:maxLines="2"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:paddingTop="8dp"
+                        android:text="@string/type"
+                        android:textColor="@color/colorTextWhite"
+                        android:textSize="10sp"
+                        android:visibility="gone"
+                        app:font_family="segoe_semi_bold" />
+
+                </LinearLayout>
+
+                <android.support.v4.widget.SwipeRefreshLayout
+                    android:id="@+id/swipeRefreshLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycle_income"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white">
+
+                    </android.support.v7.widget.RecyclerView>
+
+                </android.support.v4.widget.SwipeRefreshLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

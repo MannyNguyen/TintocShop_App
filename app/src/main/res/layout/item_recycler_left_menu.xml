@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:foreground="?selectableItemBackground"
+    android:padding="8dp">
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:id="@+id/iv_item_menu"
+        android:padding="4dp"/>
+
+    <vn.app.tintoc.control.MyTextView
+        android:id="@+id/txt_text_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_item_menu"
+        android:text="Thông tin của bạn"
+        android:textSize="16sp"
+        android:textColor="@color/colorTextWhite"
+        app:font_family="segoe_regular"
+        android:layout_marginLeft="12dp"
+        android:layout_centerVertical="true"/>
+
+    <ImageView
+        android:id="@+id/iv_notify"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:src="@drawable/ic_red_dot"
+        android:layout_gravity="center_vertical"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>

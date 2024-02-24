@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/frame_follow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.5"
+        android:background="@android:color/black"></FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_follow_order" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/gray_border_box"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:paddingBottom="26dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="-40dp"
+            android:src="@drawable/ic_follow_order" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <vn.app.tintoc.control.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_centerHorizontal="true"
+                android:maxLines="1"
+                android:text="@string/follow_order"
+                android:textColor="@color/colorShopInfoOne"
+                android:textSize="16sp"
+                android:textAllCaps="true"
+                app:font_family="segoe_bold" />
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_x" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_mail" />
+
+            <vn.app.tintoc.control.MyEditText
+                android:id="@+id/edt_follow_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/transparent"
+                android:hint="@string/email_register"
+                android:inputType="textEmailAddress"
+                android:imeOptions="actionNext"
+                android:paddingLeft="20dp"
+                android:textColor="@color/new_color_text"
+                android:textColorHint="@color/edt_hint"
+                android:textSize="16sp"
+                app:font_family="segoe_italic" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorShopInfoTwo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_password" />
+
+            <vn.app.tintoc.control.MyEditText
+                android:id="@+id/edt_follow_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/transparent"
+                android:hint="@string/password_register"
+                android:inputType="textPassword"
+                android:imeOptions="actionDone"
+                android:paddingLeft="20dp"
+                android:textColor="@color/new_color_text"
+                android:textColorHint="@color/edt_hint"
+                android:textSize="16sp"
+                app:font_family="segoe_italic" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorShopInfoTwo" />
+
+        <vn.app.tintoc.control.MyButton
+            android:id="@+id/btn_ok_follow"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bold_blue_box"
+            android:text="OK"
+            android:textColor="@color/colorTextWhite"
+            android:textSize="16sp"
+            app:font_family="segoe_bold"
+            style="?android:attr/borderlessButtonStyle"/>
+
+        <vn.app.tintoc.control.MyTextView
+            android:id="@+id/txt_quick_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:text="@string/quick_register"
+            android:textColor="@color/colorShopInfoOne"
+            android:textSize="14sp"
+            app:font_family="segoe_regular" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <vn.app.tintoc.control.MyEditText
+                    android:id="@+id/edt_enter_order_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="8"
+                    android:background="@drawable/gray_edittext_border_square_box"
+                    android:hint="@string/enter_order_code"
+                    android:paddingLeft="12dp"
+                    android:textSize="16sp"
+                    app:font_family="segoe_italic"
+                    android:singleLine="true"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorTextWhite" />
+
+                <LinearLayout
+                    android:id="@+id/ll_next_follow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:background="@drawable/gray_box"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/icon_next" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
